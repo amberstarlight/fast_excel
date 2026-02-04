@@ -390,6 +390,8 @@ module FastExcel
     end
 
     def get_worksheet_by_name(name)
+      return nil if ! @sheet_names.include?(name)
+
       sheet = super(name)
       sheet.workbook = self
 
