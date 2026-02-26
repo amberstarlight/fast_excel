@@ -17,7 +17,8 @@ libxlsxwriter/examples
 libxlsxwriter/test
 ext/fast_excel/text_width_ext.o
 ext/fast_excel/Makefile
-ext/fast_excel/text_width_ext.bundle
+ext/fast_excel/text_width_ext.bundle*
 Gemfile.lock
 lib/libxlsxwriter.dylib
 coverage/
+vendor/

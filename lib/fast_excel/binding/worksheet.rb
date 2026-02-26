@@ -391,7 +391,17 @@ module Libxlsxwriter
     def autofilter(first_row, first_col, last_row, last_col)
       Libxlsxwriter.worksheet_autofilter(self, first_row, first_col, last_row, last_col)
     end
-  
+
+    # @param [Integer] first_row
+    # @param [Integer] first_col
+    # @param [Integer] last_row
+    # @param [Integer] last_col
+    # @param [TableOptions] table_options
+    # @return [Symbol from _enum_error_]
+    def add_table(first_row, first_col, last_row, last_col, table_options)
+      Libxlsxwriter.worksheet_add_table(self, first_row, first_col, last_row, last_col, table_options)
+    end
+
     # @return [nil] 
     def activate()
       Libxlsxwriter.worksheet_activate(self)
